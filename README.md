@@ -148,9 +148,9 @@ Strengthen onboarding for new customers
 📈 How to Run the Project
 pip install -r requirements.txt
 
-Open the notebook:
+## Open the Notebook
 
-jupyter notebook Customer_Churn_Prediction.ipynb
+[Customer Churn Prediction.ipynb](Customer%20Churn%20Prediction.ipynb)
 
 🔧 Folder Structure
 Customer-Churn-Prediction/
@@ -163,4 +163,5 @@ Customer-Churn-Prediction/
 👩‍💻 Author
 
 Vanshika Gupta
+
 Data Analyst | Machine Learning | Python | Power BI
