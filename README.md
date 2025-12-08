@@ -140,5 +140,6 @@ Customer-Churn-Prediction/
 
 Vanshika Gupta
 
-Data Analyst | Machine Learning | Python | Power BI
+Data Scientist | Machine Learning | Python
+
 
