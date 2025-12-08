@@ -1,158 +1,132 @@
-📊 Customer Churn Prediction – Machine Learning Project
+# 📊 Customer Churn Prediction – Machine Learning Project
+### **By Vanshika Gupta**
 
-By Vanshika Gupta
+---
 
-🔍 Project Overview
+## 🔍 Project Overview
 
-This project builds an end-to-end customer churn prediction model for a telecom company.
-The goal is to identify customers who are likely to churn so the business can take proactive retention actions.
+This project builds an **end-to-end customer churn prediction model** for a telecom company.
+The goal is to **identify customers who are likely to churn** so the business can take proactive retention actions.
 
-The project includes:
+### The project includes:
 
-Data cleaning & preprocessing
+- Data cleaning & preprocessing  
+- Exploratory Data Analysis (EDA)  
+- Handling class imbalance using **SMOTE**
+- Feature encoding & scaling  
+- Model training using 6 ML algorithms 
+- Model comparison (Accuracy, Recall, F1, ROC-AUC)  
+- Business insights & final recommendations 
 
-Exploratory Data Analysis (EDA)
+---
 
-Handling class imbalance using SMOTE
-
-Feature encoding & scaling
-
-Model training using 6 ML algorithms
-
-Model comparison using Accuracy, Recall, F1, ROC-AUC
-
-Business insights & final recommendations
-
-🔧 Technologies Used
+## 🔧 Technologies Used
 
 Python
-
-Pandas
-
-NumPy
-
-Matplotlib / Seaborn
-
+Pandas, NumPy
+Matplotlib, Seaborn
 Scikit-learn
-
 Imbalanced-learn (SMOTE)
-
 XGBoost
 
-🔧 Project Workflow
+---
 
-Data Cleaning
+## 🔧 Project Workflow
 
-Removed blanks
+### **1. Data Cleaning**
+- Removed blank spaces  
+- Converted *TotalCharges* to numeric  
+- Filled missing values  
 
-Converted TotalCharges to numeric
+### **2. Exploratory Data Analysis (EDA)**
+- Churn distribution  
+- Categorical & numerical distributions  
+- Boxplots & histograms  
+- Correlation heatmap  
 
-Filled missing values
+### **3. Feature Engineering**
+- One-hot encoding  
+- Separating X and y  
+- Standard scaling  
 
-EDA
+### **4. Imbalance Handling**
+- Applied **SMOTE** *after* train-test split  
 
-Churn distribution
-
-Feature relationships
-
-Boxplots & histograms
-
-Correlation heatmap
-
-Feature Engineering
-
-Encoding categorical variables
-
-Separating X and y
-
-Standard scaling
-
-Imbalance Handling
-
-Applied SMOTE after train-test split
-
-Model Training
+### **5. Model Training**
 Trained the following models:
 
-Logistic Regression
+- Logistic Regression  
+- Decision Tree (tuned using RandomizedSearchCV)  
+- Random Forest  
+- Gradient Boosting  
+- XGBoost  
+- AdaBoost  
 
-Decision Tree (with tuning)
-
-Random Forest
-
-Gradient Boosting
-
-XGBoost
-
-AdaBoost
-
-Model Evaluation
+### **6. Model Evaluation**
 Compared performance based on:
 
-Accuracy
+- Accuracy  
+- Precision  
+- Recall  
+- F1-score  
+- ROC-AUC  
 
-Precision
+### **7. Model Selection**
+➡️ **Gradient Boosting** selected as the final model (best balanced performance).
 
-Recall
+---
 
-F1-score
+## 📈 Final Model Selection
 
-ROC-AUC
+**Based on Accuracy, Recall, F1-score, and ROC-AUC:**
 
-Model Selection
-Gradient Boosting selected as the final model due to best balanced performance.
+| Model | Key Strength |
+|-------|--------------|
+| **Gradient Boosting** |  Best overall balanced performance |
+| **AdaBoost** |  Highest recall (0.88) — best for catching churners |
+| **Logistic Regression** |  Most interpretable with strong AUC |
 
-Business Insights & Recommendations
-Provided actionable insights to reduce churn.
+✔ **Final chosen model: Gradient Boosting**
 
-📈 Final Model Selection
+---
 
-Based on Accuracy, Recall, F1-score, and ROC-AUC:
+## 📈 Business Insights
 
-Gradient Boosting → Best overall performance
+Top churn indicators:
 
-AdaBoost → Highest recall (0.88), best for catching churners
+- **Month-to-Month contracts** → highest churn  
+- **Fiber Optic** internet users churn more  
+- Missing **security/tech support services** increases churn  
+- **High monthly charges** push customers away  
+- **Low tenure** customers churn quickly  
+- **Electronic Check** payment users have the highest churn rate  
 
-Logistic Regression → Highly interpretable with strong AUC
+---
 
-Final chosen model: Gradient Boosting
+## 📌 Recommendations
 
-📈 Business Insights
+- Offer discounts to convert month-to-month users  
+- Improve fiber internet service quality  
+- Bundle security + tech support services  
+- Provide retention offers to high-billing users  
+- Strengthen onboarding for new customers  
 
-Key drivers of churn:
+---
 
-Month-to-month contracts
+## 📈 How to Run the Project
 
-Fiber optic internet service
+Install dependencies:
 
-Lack of security & tech support services
-
-High monthly charges
-
-Low tenure (new customers churn more)
-
-Payment method: Electronic check
-
-📌 Recommendations
-
-Offer discounts to convert month-to-month customers
-
-Improve fiber service quality
-
-Bundle security/tech support services
-
-Provide retention offers to high-charge users
-
-Strengthen onboarding for new customers
-
-📈 How to Run the Project
+```
 pip install -r requirements.txt
+```
 
 ## Open the Notebook
 
 [Customer Churn Prediction.ipynb](Customer%20Churn%20Prediction.ipynb)
 
-🔧 Folder Structure
+## Folder Structure
+
 Customer-Churn-Prediction/
 │
 ├── Customer_Churn_Prediction.ipynb
@@ -160,8 +134,10 @@ Customer-Churn-Prediction/
 ├── requirements.txt
 └── customer_churn.csv   
 
+
 👩‍💻 Author
 
 Vanshika Gupta
 
 Data Analyst | Machine Learning | Python | Power BI
+
