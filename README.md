@@ -22,11 +22,11 @@ The goal is to **identify customers who are likely to churn** so the business ca
 
 ## 🔧 Technologies Used
 
-Python
-Pandas, NumPy
-Matplotlib, Seaborn
-Scikit-learn
-Imbalanced-learn (SMOTE)
+Python,
+Pandas, NumPy,
+Matplotlib, Seaborn,
+Scikit-learn,
+Imbalanced-learn (SMOTE),
 XGBoost
 
 ---
@@ -127,13 +127,14 @@ pip install -r requirements.txt
 
 ## Folder Structure
 
+```
 Customer-Churn-Prediction/
 │
 ├── Customer_Churn_Prediction.ipynb
 ├── README.md
 ├── requirements.txt
 └── customer_churn.csv   
-
+```
 
 👩‍💻 Author
 
