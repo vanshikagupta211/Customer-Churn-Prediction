@@ -72,7 +72,7 @@ Compared performance based on:
 - ROC-AUC  
 
 ### **7. Model Selection**
-➡️ **Gradient Boosting** selected as the final model (best balanced performance).
+➡️ Logistic Regression selected as the final model (best balanced & most stable performance).
 
 ---
 
@@ -82,11 +82,11 @@ Compared performance based on:
 
 | Model | Key Strength |
 |-------|--------------|
-| **Gradient Boosting** |  Best overall balanced performance |
-| **AdaBoost** |  Highest recall (0.88) — best for catching churners |
-| **Logistic Regression** |  Most interpretable with strong AUC |
+| **Logistic Regression** |  Best balanced performance, highest AUC, stable, interpretable |
+| **Gradient Boosting** |  Strong performance but slightly less stable |
+| **AdaBoost** |  Highest recall, good for catching churners |
 
-✔ **Final chosen model: Gradient Boosting**
+✔ **Final chosen model: Logistic Regression**
 
 ---
 
@@ -141,5 +141,6 @@ Customer-Churn-Prediction/
 Vanshika Gupta
 
 Data Scientist | Machine Learning | Python
+
 
 
